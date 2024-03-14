@@ -1,0 +1,46 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+<borderlayout apply="com.controller.Employeedetails">
+<north>
+<div width="100%" height="50px"/>
+</north>
+<west width="18%">
+<navbar orient="vertical" style="background-color:grey" id="stocksnavbarid">
+<nav label="Employee" id="stocksnavid">
+<navitem label="All Employee" id="allstaff"></navitem>
+<navitem label="teaching" id="techstaff"></navitem>
+<navitem label="non teaching staff" id="nontechstaff"></navitem>
+</nav>
+</navbar>
+</west>
+<center>
+<include src="" id="includezulid"></include>
+</center>
+</borderlayout>
+<div>
+<drawer id="b1" apply="com.controller.allemployee">
+  <zk>
+    <label value="Employee details" style="background-color:#676767;"></label>
+        
+                <separator></separator>
+                <image id="EmpImage1"/>
+               
+                
+                <label  id="name1" style="color: black;"/>
+                <separator></separator>
+                <separator></separator>
+        <label id="roleemp" style="color: black;"></label>
+       <image id="EmpImage"/>
+               
+        <button id="moredetails" onClick=""> more details</button>
+   
+        <separator></separator>
+        
+         <label  id="role" style="color: black;"/>
+          <label  id="active" style="color: black;"/>
+    
+       </zk>
+</drawer>
+</div>
+</zk>
